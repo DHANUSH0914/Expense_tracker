@@ -4,6 +4,7 @@ const mongoose=require("mongoose");
 const dotenv=require("dotenv")
 const expenseRoute=require("./routes/expense")
 
+
 dotenv.config()
 const app=express();
 
@@ -15,6 +16,7 @@ app.use(express.json())
 
 //Routes
 app.use("/expenses",expenseRoute);
+
 
 
 //DB connection

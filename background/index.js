@@ -11,12 +11,12 @@ dotenv.config();
 mongoose.connect(process.env.DB_CONNECTION).then(() => {
     console.log("DB connection is Successful");
 }).catch((err) => {
-    console.log(err);
+    console.log("connection",err);
 });
 
 
 const run = () => {
-    cron.schedule('* * * * * *', () => {
+    cron.schedule('* * * * * *', () => {                              //sec min hr day month week
         // console.log('The task is running every second');               //Schedule the Process
         expenseMail()
     });
