@@ -1,0 +1,39 @@
+.expense-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0 0%, #f0f0f0 50%, rgba(240, 240, 240, 0.5) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.expense-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  transition: transform 0.3s;
+}
+
+.expense-card:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.expense-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-list li {
+  margin: 8px 0;
+}
