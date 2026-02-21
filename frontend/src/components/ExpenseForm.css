@@ -1,0 +1,43 @@
+.expense-form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 16px;
+}
+
+.expense-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.expense-form h2 {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.expense-form input,
+.expense-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease;
+}
+
+.expense-form input:focus,
+.expense-form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+}
+
+@media(max-width: 768px) {
+  .expense-form {
+    padding: 15px;
+  }
+}
